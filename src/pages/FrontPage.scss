@@ -1,0 +1,28 @@
+@import "../assets/consts";
+
+
+.section {
+  min-height: calc(100vh - #{$footer-height});
+  //margin-bottom: $page-margin-top;
+  margin: 0 !important;
+}
+
+@media (min-width: $screen-breakpoint-md) {
+  .section {
+    //margin-top: $page-margin-top * 1.6;
+  }
+}
+
+@media (min-width: $screen-breakpoint-lg) {
+  .section {
+    //margin-top: $page-margin-top;
+  }
+}
+
+.elite-resources-img, .ghcs-img {
+  max-width: 100%;
+}
+
+.rtl-content {
+  left: 50px;
+}

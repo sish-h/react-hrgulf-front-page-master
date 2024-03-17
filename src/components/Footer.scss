@@ -1,0 +1,43 @@
+@import "../assets/consts";
+
+.footer-container {
+  //position: absolute;
+  //left: 0;
+  //right: 0;
+  //bottom: 0;
+  padding-top: .8rem;
+  height: $footer-height;
+  background: linear-gradient(90deg, $dark-color, $light-color);
+}
+
+.social-links {
+  display: flex;
+  flex-direction: row;
+}
+
+.social-links li {
+  //display: inline-block;
+  //float: left;
+  list-style: none;
+  margin-left: .7rem;
+  margin-right: .7rem;
+  font-size: 1.2rem;
+}
+
+.social-links li a {
+  color: white;
+  transition: ease-in $transition-time;
+}
+
+.social-links li a:hover {
+  color: $light-color;
+  transition: ease-in $transition-time;
+}
+
+.social-links li a i {
+  font-size: 1.5rem;
+}
+
+.rtl-content {
+
+}

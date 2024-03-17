@@ -1,0 +1,194 @@
+@import "../../assets/consts";
+
+$nav-height-sm: 350px;
+$nav-height-md: 500px;
+$nav-height-lg: 650px;
+
+$nav-item-fontsize-sm: .48rem;
+$nav-item-fontsize-md: .7rem;
+$nav-item-fontsize-lg: .85rem;
+
+$elite-item-fontsize-sm: 1rem;
+$elite-item-fontsize-md: 1.25rem;
+$elite-item-fontsize-lg: 1.5rem;
+
+.nav-container {
+  width: $nav-height-sm;
+  height: $nav-height-sm;
+  background-image: url("../../assets/img/nav-bg.png");
+  background-size: cover  ;
+}
+
+@media (min-width: $screen-breakpoint-md) {
+  .nav-container {
+    width: $nav-height-md;
+    height: $nav-height-md;
+  }
+}
+
+@media (min-width: $screen-breakpoint-lg) {
+  .nav-container {
+    width: $nav-height-lg;
+    height: $nav-height-lg;
+  }
+}
+
+.nav-column {
+  height: $nav-height-sm;
+}
+
+@media (min-width: $screen-breakpoint-md) {
+  .nav-column {
+    height: $nav-height-md;
+  }
+}
+
+@media (min-width: $screen-breakpoint-lg) {
+  .nav-column {
+    height: $nav-height-lg;
+  }
+}
+
+.human-sec, .elearning-sec {
+  margin-top: calc(#{$nav-height-sm} / 2 - #{$nav-item-fontsize-sm} * 1.5);
+}
+
+@media (min-width: $screen-breakpoint-md) {
+  .human-sec, .elearning-sec {
+    margin-top: calc(#{$nav-height-md} / 2 - #{$nav-item-fontsize-md} * 1.5);
+  }
+}
+
+@media (min-width: $screen-breakpoint-lg) {
+  .human-sec, .elearning-sec {
+    margin-top: calc(#{$nav-height-lg} / 2 - #{$nav-item-fontsize-lg} * 1.5);
+  }
+}
+
+.knowledge-sec, .recruitment-sec {
+  height: calc(#{$nav-height-sm} * .235);
+  padding-top: calc(#{$nav-height-sm} * .1 - #{$nav-item-fontsize-sm});
+}
+
+@media (min-width: $screen-breakpoint-md) {
+  .knowledge-sec, .recruitment-sec {
+    height: calc(#{$nav-height-md} * .235);
+    padding-top: calc(#{$nav-height-md} * .1 - #{$nav-item-fontsize-md});
+  }
+}
+
+@media (min-width: $screen-breakpoint-lg) {
+  .knowledge-sec, .recruitment-sec {
+    height: calc(#{$nav-height-lg} * .235);
+    padding-top: calc(#{$nav-height-lg} * .1 - #{$nav-item-fontsize-lg});
+  }
+}
+
+.knowledge-sec a, .elearning-sec a, .recruitment-sec a, .human-sec a {
+  color: white;
+  transition: ease-in $transition-time;
+  text-decoration: none;
+}
+
+.knowledge-sec a:hover, .elearning-sec a:hover, .recruitment-sec a:hover, .human-sec a:hover {
+  color: $light-color;
+  transition: ease-in $transition-time;
+}
+
+.knowledge-sec a p, .elearning-sec a p, .recruitment-sec a p, .human-sec a p {
+  margin: 0;
+  font-size: $nav-item-fontsize-sm;
+}
+
+@media (min-width: $screen-breakpoint-md) {
+  .knowledge-sec a p, .elearning-sec a p, .recruitment-sec a p, .human-sec a p {
+    font-size: $nav-item-fontsize-md;
+  }
+}
+
+@media (min-width: $screen-breakpoint-lg) {
+  .knowledge-sec a p, .elearning-sec a p, .recruitment-sec a p, .human-sec a p {
+    font-size: $nav-item-fontsize-lg;
+  }
+}
+
+.elite-sec {
+  padding-top: 33%;
+}
+
+.elite-sec-en {
+  height: calc(#{$nav-height-sm} * .53);
+  //padding-top: calc(#{$nav-height-sm} * .24 - #{$elite-item-fontsize-sm});
+}
+
+.elite-sec-ar {
+  height: calc(#{$nav-height-sm} * .53);
+  //padding-top: calc(#{$nav-height-sm} * .26 - #{$elite-item-fontsize-sm});
+}
+
+.elite-sec img {
+  width: 70%;
+}
+
+@media (min-width: $screen-breakpoint-md) {
+  .elite-sec {
+    padding-top: 34%;
+  }
+
+  .elite-sec-en {
+    height: calc(#{$nav-height-md} * .53);
+    //padding-top: calc(#{$nav-height-md} * .24 - #{$elite-item-fontsize-md});
+  }
+
+  .elite-sec-ar {
+    height: calc(#{$nav-height-md} * .53);
+    //padding-top: calc(#{$nav-height-md} * .26 - #{$elite-item-fontsize-md});
+  }
+}
+
+@media (min-width: $screen-breakpoint-lg) {
+  .elite-sec {
+    padding-top: 35%;
+  }
+
+  .elite-sec-en {
+    height: calc(#{$nav-height-lg} * .53);
+    //padding-top: calc(#{$nav-height-lg} * .24 - #{$elite-item-fontsize-lg});
+  }
+
+  .elite-sec-ar {
+    height: calc(#{$nav-height-lg} * .53);
+    //padding-top: calc(#{$nav-height-lg} * .26 - #{$elite-item-fontsize-lg});
+  }
+}
+
+.elite-sec a {
+  color: $dark-color;
+  transition: ease-in $transition-time;
+  text-decoration: none;
+}
+
+.elite-sec a:hover {
+  color: $light-color;
+  transition: ease-in $transition-time;
+}
+
+.elite-sec a p {
+  margin: 0;
+  font-size: $elite-item-fontsize-sm;
+  font-weight: bold;
+}
+
+@media (min-width: $screen-breakpoint-md) {
+  .elite-sec a p {
+    margin: 0;
+    font-size: $elite-item-fontsize-md;
+  }
+}
+
+@media (min-width: $screen-breakpoint-lg) {
+  .elite-sec a p {
+    margin: 0;
+    font-size: $elite-item-fontsize-lg;
+  }
+}

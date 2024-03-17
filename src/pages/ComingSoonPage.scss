@@ -1,0 +1,7 @@
+@import "../assets/consts";
+
+.section {
+  min-height: calc(100vh - #{$footer-height});
+  //margin-bottom: $page-margin-top;
+  margin: 0 !important;
+}

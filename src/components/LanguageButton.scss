@@ -1,0 +1,33 @@
+@import "../assets/consts";
+
+$offset: 20px;
+
+.translate-button {
+  position: absolute;
+  padding: .9rem .8rem;
+  //bottom: calc(#{$footer-height} + #{$offset});
+  top: $offset;
+  right: $offset;
+  width: 4rem;
+  height: 4rem;
+  font-size: 1.5rem;
+  border-radius: 4rem;
+  background: $dark-color;
+  transition: ease-in $transition-time;
+}
+
+.translate-button:hover {
+  background: $light-color;
+  transition: ease-in $transition-time;
+}
+
+.translate-button img {
+  width: 100%;
+}
+//
+//.rtl-content {
+//  .translate-button {
+//    left: $offset;
+//    right: unset;
+//  }
+//}
